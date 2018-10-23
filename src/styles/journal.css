@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: #31557e;
+}
+
+
+.journalMain {
+    margin: auto;
+    background: lightgray;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0px 5px 2px 2px black;
+}
+
+h1 {
+    color: rgb(58, 58, 58);
+    font-family: fantasy;
+    font-size: 3em;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border: 1px solid darkgrey;
+    margin: 10px;
+    padding: .5em;
+    box-shadow: 0px 5px 2px 0px rgb(58, 58, 58);
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+input[type=text], input[type=date],
+textarea, select {
+    width: 100%;
+}
+
+input[type=submit] {
+    width: 80%;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    background: rgb(61, 61, 61);
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.journal_entry {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  background: white;
+  border: 1px solid black;
+  padding: .5em;
+}

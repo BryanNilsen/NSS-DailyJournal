@@ -1,0 +1,22 @@
+{
+    "entries": [
+        {
+            "date": "07/24/2018",
+            "concept": "Array methods",
+            "entry": "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
+            "mood": "Happy"
+        },
+        {
+            "date": "07/26/2018",
+            "concept": "Array methods",
+            "entry": "Seems like I forgot everything I learned.",
+            "mood": "Sad"
+        },
+        {
+            "date": "07/28/2018",
+            "concept": "Manipulating the DOM",
+            "entry": "Couldn't get anything to work right.",
+            "mood": "Angry"
+        }
+    ]
+}
