@@ -1,5 +1,4 @@
 let moodFilterButtons = document.querySelectorAll("input[name='mood']")
-console.log("mood filter buttons", moodFilterButtons)
 
 moodFilterButtons.forEach(button => {
   button.addEventListener("click", (e) => {

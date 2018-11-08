@@ -1,7 +1,7 @@
 // the following locates the form field element on the DOM and inserts all of the form elements
 let entryFormElement = document.querySelector("#entryForm")
 
-let entryForm = `<fieldset>
+let entryForm = `<fieldset class="journal__input">
 <label for="journalDate">Date of entry</label>
 <input type="date" name="journalDate" id="journalDate">
 </fieldset>
@@ -23,7 +23,7 @@ let entryForm = `<fieldset>
     <option value="angry">Angry</option>
 </select>
 </fieldset>
-<button id="submit-journal" value="Record Journal Entry">Record Journal Entry</button>`
+<button id="submit-journal" value="Submit Journal Entry">Record Journal Entry</button>`
 
 entryFormElement.innerHTML = entryForm
 

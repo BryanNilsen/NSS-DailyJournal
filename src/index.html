@@ -12,33 +12,35 @@
 
 <body>
     <div class="journalMain">
-        <h1 class="fantasy">Daily Journal</h1>
+        <h1 class="journal__title">Daily Journal</h1>
         <div id="entryForm">
             <!-- form entries from entryForm.js -->
         </div>
 
         <div id="filterResults">
             <fieldset>
-                <legend>Filter Journal Entries By Mood</legend>
-                <div>
-                    <input type="radio" id="happy" name="mood" value="happy"/>
-                    <label for="happy">Happy</label>
-                </div>
-                <div>
-                    <input type="radio" id="excited" name="mood" value="excited"/>
-                    <label for="excited">Excited</label>
-                </div>
-                <div>
-                    <input type="radio" id="frustrated" name="mood" value="frustrated"/>
-                    <label for="frustrated">Frustrated</label>
-                </div>
-                <div>
-                    <input type="radio" id="sad" name="mood" value="sad"/>
-                    <label for="sad">Sad</label>
-                </div>
-                <div>
-                    <input type="radio" id="angry" name="mood" value="angry"/>
-                    <label for="angry">Angry</label>
+                <legend claa="filter__options">Filter By Mood</legend>
+                <div class="filter__container">
+                    <div class="filter__options">
+                        <input type="radio" id="happy" name="mood" value="happy" />
+                        <label for="happy">Happy</label>
+                    </div>
+                    <div class="filter__options">
+                        <input type="radio" id="excited" name="mood" value="excited" />
+                        <label for="excited">Excited</label>
+                    </div>
+                    <div class="filter__options">
+                        <input type="radio" id="frustrated" name="mood" value="frustrated" />
+                        <label for="frustrated">Frustrated</label>
+                    </div>
+                    <div class="filter__options">
+                        <input type="radio" id="sad" name="mood" value="sad" />
+                        <label for="sad">Sad</label>
+                    </div>
+                    <div class="filter__options">
+                        <input type="radio" id="angry" name="mood" value="angry" />
+                        <label for="angry">Angry</label>
+                    </div>
                 </div>
             </fieldset>
         </div>

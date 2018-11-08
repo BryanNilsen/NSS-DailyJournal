@@ -42,7 +42,7 @@ const formValidation = () => {
         alert("Please enter the concept(s) you learned.")
     } else if (journalEntryEl.value === "") {
         alert("Please complete the journal entry for today.")
-    } else if(!journalConceptsEl.value.match(/^[a-zA-Z\s(){}:;]+$/)){
+    } else if(!journalConceptsEl.value.match(/^[a-zA-Z\s(){}:;'"]+$/)){
         alert("Please use only letters, numbers or (), {}, :, and ;")
     } else if (journalConceptsEl.value === "") {
             alert("You must enter a concept")
@@ -64,22 +64,24 @@ $( "#conceptsCovered" ).on('input', function() {
 
 // profanity alert
 const checkProfanity = () => {
-    const entries = document.getElementById("journalEntry").value
-    let entry = entries.toLowerCase()
-    const entryRegex = /damn|shit|hell/
-    if (entryRegex.test(entry) === true) {
+    const journalEntry = $("#journalEntry").val().toLowerCase()
+    const conceptsCovered = $("#conceptsCovered").val().toLowerCase()
+    const entryRegex = /shit|ass|fuck/
+    if (entryRegex.test(journalEntry) === true) {
         alert("No profanity, please.")
-        clearJournalEntry()
+        journalEntryEl.value = ""
+    }
+    else if (entryRegex.test(conceptsCovered) === true) {
+        alert("No profanity, please.")
+        journalConceptsEl.value = ""
     }
  }
+
+
 //  the following adds the profanity filter to the journal entry text input
-document.getElementById('journalEntry').addEventListener('keyup', checkProfanity)
-
-
-// clearing journalEntry
-function clearJournalEntry(){
-    journalEntryEl.value = ""
-}
+// document.getElementById('journalEntry').addEventListener('keyup', checkProfanity)
+$("#journalEntry").keyup(checkProfanity)
+$("#conceptsCovered").keyup(checkProfanity)
 
 
 // use the API object and grab the data
@@ -89,6 +91,6 @@ const populatePage = () => {
 }
 
 // EVENT LISTENERS
-let entrySubmitBtn = document.querySelector("#submit-journal")
-entrySubmitBtn.addEventListener("click", formValidation)
-
+// let entrySubmitBtn = document.querySelector("#submit-journal")
+// entrySubmitBtn.addEventListener("click", formValidation)
+$("#submit-journal").click(formValidation)

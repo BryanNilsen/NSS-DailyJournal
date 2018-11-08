@@ -1,42 +1,58 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
 body {
+    margin-top: 0;
     background: #31557e;
-}
-
-
-.journalMain {
-    margin: auto;
-    background: lightgray;
-    width: 400px;
-    padding: 20px;
-    box-shadow: 0px 5px 2px 2px black;
-}
-
-h1 {
-    color: rgb(58, 58, 58);
-}
-
-.fantasy {
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
 }
 
 fieldset {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     color: black;
     border: 1px solid darkgrey;
     margin: 10px;
     padding: .5em;
-    box-shadow: 0px 5px 2px 0px rgb(58, 58, 58);
+    /* box-shadow: 0px 5px 2px 0px rgb(58, 58, 58); */
     background: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
 }
+
+legend {
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.journalMain {
+    margin: auto;
+    background: lightgray;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 0px 5px 2px 2px black;
+}
+
+.journal__title {
+    color: rgb(58, 58, 58);
+    text-align: center;
+    font-family: fantasy;
+    font-size: 3em;
+    margin: 0;
+}
+
+.filter__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter__options {
+    display: flex;
+    padding: 0 10px;
+}
+
+
+
+/* .journal__input {
+    flex-direction: column;
+} */
 
 input[type=text], input[type=date],
 textarea, select {
@@ -61,7 +77,6 @@ button:hover {
 }
 
 .journal_entry {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 10px;
   background: white;
   border: 1px solid black;

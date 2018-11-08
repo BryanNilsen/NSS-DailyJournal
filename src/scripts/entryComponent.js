@@ -9,6 +9,5 @@ const makeJournalEntryComponent = (journalEntry) => {
     <h3>Entry Date: ${journalEntry.date}</h3>
     <h2>${journalEntry.concept}</h2>
     <p><strong>Notes: </strong>${journalEntry.entry}</p>
-    <p><strong>Mood: </strong>${journalEntry.mood}</p>
     `
 }

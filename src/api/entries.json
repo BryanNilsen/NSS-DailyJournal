@@ -13,6 +13,13 @@
       "entry": "Worked on the daily journal and tried getting the form validation working. Able to alert on certain swear words and limit field sizes as well.",
       "mood": "frustrated",
       "id": 2
+    },
+    {
+      "date": "2018-10-24",
+      "concept": "CSS and Flexbox",
+      "entry": "I don't remember exactly what we did or if we even did any CSS this day. This is just a dummy entry.",
+      "mood": "happy",
+      "id": 3
     }
   ]
 }
