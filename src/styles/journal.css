@@ -19,8 +19,10 @@ body {
 
 h1 {
     color: rgb(58, 58, 58);
+}
+
+.fantasy {
     font-family: fantasy;
-    font-size: 3em;
 }
 
 fieldset {
@@ -41,8 +43,8 @@ textarea, select {
     width: 100%;
 }
 
-input[type=submit] {
-    width: 80%;
+button {
+    /* width: 80%; */
     color: white;
     font-size: 1em;
     font-weight: bold;
@@ -51,6 +53,11 @@ input[type=submit] {
     display: block;
     margin: 0 auto;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(134, 0, 0);
 }
 
 .journal_entry {
@@ -58,5 +65,6 @@ input[type=submit] {
   margin: 10px;
   background: white;
   border: 1px solid black;
+  border-radius: 10px;
   padding: .5em;
 }
