@@ -1,2 +1,2 @@
 # NSS-DailyJournal
-contains branches of each stage at completion of tasks
+journal project demonstrating concepts learned throughout course
