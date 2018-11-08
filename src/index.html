@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles/journal.css">
     <title>Daily Journal</title>
-    
+
 </head>
+
 <body>
     <div class="journalMain">
-        <h1>Daily Journal</h1>
-        <!-- form entries -->
-        <form action="">
-            <fieldset>
-                <label for="journalDate">Date of entry</label>
-                <input type="date" name="journalDate" id="journalDate">
-            </fieldset>
-            <fieldset>
-                <label for="conceptsCovered">Concepts covered</label>
-                <textarea name="conceptsCovered" id="conceptsCovered" placeholder="What did you learn?"></textarea>
-            </fieldset>
-            <fieldset>
-                <label for="journalEntry">Journal Entry</label>
-                <textarea name="journalEntry" id="journalEntry" placeholder="What did you do today?"></textarea>
-            </fieldset>
-            <fieldset>
-                <label for="moodForDay">Mood for the day</label>
-                <select id="moodForDay" name="moodForDay">
-                    <option value="happy">Happy</option>
-                    <option value="sad">Sad</option>
-                    <option value="angry">Angry</option>
-                </select>
-            </fieldset>
-            <input type="submit" value="Record Journal Entry" onsubmit="submitJournal()">
-        </form>
+        <h1 class="fantasy">Daily Journal</h1>
+        <div id="entryForm">
+            <!-- form entries from entryForm.js -->
+        </div>
 
+        <div id="filterResults">
+            <fieldset>
+                <legend>Filter Journal Entries By Mood</legend>
+                <div>
+                    <input type="radio" id="happy" name="mood" value="happy"/>
+                    <label for="happy">Happy</label>
+                </div>
+                <div>
+                    <input type="radio" id="excited" name="mood" value="excited"/>
+                    <label for="excited">Excited</label>
+                </div>
+                <div>
+                    <input type="radio" id="frustrated" name="mood" value="frustrated"/>
+                    <label for="frustrated">Frustrated</label>
+                </div>
+                <div>
+                    <input type="radio" id="sad" name="mood" value="sad"/>
+                    <label for="sad">Sad</label>
+                </div>
+                <div>
+                    <input type="radio" id="angry" name="mood" value="angry"/>
+                    <label for="angry">Angry</label>
+                </div>
+            </fieldset>
+        </div>
         <!-- dynamic output from javascript -->
         <article id="entryLog" class="entryLog">
         </article>
     </div>
 
-    <script src="scripts/data.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="scripts/API-data.js"></script>
+    <script src="scripts/entryForm.js"></script>
     <script src="scripts/entryComponent.js"></script>
     <script src="scripts/entriesDOM.js"></script>
-    <script src="scripts/journal.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/moodFilter.js"></script>
 </body>
+
 </html>
